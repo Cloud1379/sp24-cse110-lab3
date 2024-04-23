@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting Notes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Meeting Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#brainstorming">Brainstorming</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="brainstorming">
+            <h2>Brainstorming</h2>
+            <h4>4/16/2023</h4>
+            <div>
+                <p>This is the agenda</p>
+                <ol>
+                    <li>Thing 1</li>
+                    <li>Thing 2</li>
+                    <li>Thing 3</li>
+                </ol>
+                <p>This is the unfinished business</p>
+                <span> - Blah blah unfinished</span>
+                <p>This is the new business</p>
+                <span> - Blah blah new business</span>
+            </div>
+            <hr>
+            <h2>About</h2>
+            <p>This is <b>bold text</b>.</p>
+            <p>This is <strong>strong text</strong></p>
+            <p>This is <i>italic text</i>.</p>
+            <p>This is <em>emphasized text</em></p>
+            <p>This is a line<br>break.</p>
+            <hr>
+            <h2>Comments </h2>
+            <ol>
+                <li>Comment 1</li>
+                <li>Comment 2</li>
+                <li>Comment 3</li>
+            </ol>
+            <h2>Attendance List </h2>
+            <ol>
+                <li>Person 1</li>
+                <li>Person 2</li>
+                <li>Person 3</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Interactive Elements</h2>
+
+            <details>
+                <summary>Click to expand</summary>
+                <p>This is some additional content that can be expanded or collapsed.</p>
+            </details>
+
+            <details>
+                <summary>Another section</summary>
+                <p>More content here...</p>
+            </details>
+        </section>
+
+
+        <section id="media">
+            <h2>Images and Multimedia</h2>
+            <h3>Image</h3>
+            <img src="/screenshots/example.png" alt="Example Screenshot">
+            <h3>Video</h3>
+            <video controls width="400" height="300">
+                <source src="/screenshots/undefined-Imgur.mp4" type="video/mp4">
+            </video>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="/screenshots/cat-meow-14536.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <section id="form">
+            <h2>Meeting Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Your Feedback</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required><br><br>
+
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="preference">Preference:</label>
+                    <select id="preference" name="preference">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select><br><br>
+
+                    <label for="agree">Agree to terms:</label>
+                    <input type="checkbox" id="agree" name="agree" required><br><br>
+
+                    <label for="customOption">Custom Option:</label>
+                    <input type="text" id="customOption" name="customOption" list="customOptions">
+                    <datalist id="customOptions">
+                        <option value="Option A">
+                        <option value="Option B">
+                        <option value="Option C">
+                    </datalist><br><br>
+
+                    <button type="submit" style="font-size: 16px; padding: 8px 16px;">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </footer>
+
+</body>
+
+</html>
