@@ -99,7 +99,7 @@ main {
     margin: 20px; /* Margins outside the main content */
     border: 2px solid black; /* Border around the main content */
     border-radius: 10px; /* Rounded corners */
-    color: color-mix(#000000, #000000)
+    color: color-mix(in srgb, #000000 100%, #FFFFFF 00%);
 }
 
 /* Section-specific styles */
