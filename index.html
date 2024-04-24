@@ -4,29 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Meeting Notes</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="https://cloud1379.github.io/sp24-cse110-lab3/favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>Welcome to the Meeting Notes</h1>
-        <nav>
+<body class="site-body">
+    <header class="site-header">
+        <h1 class="site-title">Welcome to the Meeting Notes</h1>
+        <nav class="site-nav">
             <ul>
-                <li><a href="#brainstorming">Brainstorming</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#form">Form</a></li>
+                <li><a href="#brainstorming" class="nav-link">Brainstorming</a></li>
+                <li><a href="#media" class="nav-link">Media</a></li>
+                <li><a href="#form" class="nav-link">Form</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="brainstorming">
+    <main class="site-main">
+        <section id="brainstorming" class="brainstorming-section">
             <h2>Brainstorming</h2>
-            <h4>4/16/2023</h4>
-            <div>
+            <h4 data-role="date">4/16/2023</h4>
+            <div class="container">
                 <p>This is the agenda</p>
                 <ol>
                     <li>Thing 1</li>
@@ -38,101 +47,99 @@
                 <p>This is the new business</p>
                 <span> - Blah blah new business</span>
             </div>
-            <hr>
-            <h2>About</h2>
-            <p>This is <b>bold text</b>.</p>
-            <p>This is <strong>strong text</strong></p>
-            <p>This is <i>italic text</i>.</p>
-            <p>This is <em>emphasized text</em></p>
-            <p>This is a line<br>break.</p>
-            <hr>
-            <h2>Comments </h2>
-            <ol>
-                <li>Comment 1</li>
-                <li>Comment 2</li>
-                <li>Comment 3</li>
-            </ol>
-            <h2>Attendance List </h2>
+            <div class="about-section">
+                <hr>
+                <h2>About</h2>
+                <p>This is <b>bold text</b>.</p>
+                <p>This is <strong>strong text</strong></p>
+                <p>This is <i>italic text</i>.</p>
+                <p>This is <em>emphasized text</em></p>
+                <p>This is a line<br>break.</p>
+                <hr>
+            </div>
+            <div class="adjacent-sibling-example">
+                <h2>Comments</h2>
+                <ol>
+                    <li>Comment 1</li>
+                    <li>Comment 2</li>
+                    <li>Comment 3</li>
+                </ol>
+            </div>
+            <h2>Attendance List</h2>
             <ol>
                 <li>Person 1</li>
                 <li>Person 2</li>
                 <li>Person 3</li>
             </ol>
-            <hr>
         </section>
 
-        <section>
+        <section class="interactive-section">
             <h2>Interactive Elements</h2>
-
             <details>
                 <summary>Click to expand</summary>
                 <p>This is some additional content that can be expanded or collapsed.</p>
             </details>
-
             <details>
                 <summary>Another section</summary>
                 <p>More content here...</p>
             </details>
         </section>
 
-
-        <section id="media">
+        <section id="media" class="media-section">
+            <style>
+                img {
+                    max-width: 80%;
+                    /* Maintain aspect ratio */
+                    max-height: auto;
+                }
+            </style>
             <h2>Images and Multimedia</h2>
+            <div class="image-container">
             <h3>Image</h3>
-            <img src="https://cloud1379.github.io/sp24-cse110-lab3/screenshots/example.png" alt="Example Screenshot">
+            
+            <img src="https://cloud1379.github.io/sp24-cse110-lab3/screenshots/example.png" alt="Example Screenshot"
+                class="image-element">
+            </div>
             <h3>Video</h3>
-            <video controls width="400" height="300">
-                <source src="https://cloud1379.github.io/sp24-cse110-lab3/screenshots/undefined-Imgur.mp4" type="video/mp4">
+            <video controls class="video-element">
+                <source src="https://cloud1379.github.io/sp24-cse110-lab3/screenshots/undefined-Imgur.mp4"
+                    type="video/mp4">
             </video>
             <h3>Audio</h3>
-            <audio controls>
-                <source src="https://cloud1379.github.io/sp24-cse110-lab3/screenshots/cat-meow-14536.mp3" type="audio/mpeg">
+            <audio controls class="audio-element">
+                <source src="https://cloud1379.github.io/sp24-cse110-lab3/screenshots/cat-meow-14536.mp3"
+                    type="audio/mpeg">
             </audio>
         </section>
     </main>
 
-    <footer>
-        <section id="form">
+    <footer class="site-footer">
+        <section id="form" class="feedback-section">
             <h2>Meeting Feedback Form</h2>
-            <form>
+            <form class="feedback-form">
                 <fieldset>
                     <legend>Your Feedback</legend>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-
+                    <input type="text" id="name" name="name" required>
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required><br><br>
-
+                    <input type="email" id="email" name="email" required>
                     <label for="feedback">Feedback:</label>
-                    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
-
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
                     <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" required><br><br>
-
+                    <input type="date" id="date" name="date" required>
                     <label for="preference">Preference:</label>
                     <select id="preference" name="preference">
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
-                    </select><br><br>
-
+                    </select>
                     <label for="agree">Agree to terms:</label>
-                    <input type="checkbox" id="agree" name="agree" required><br><br>
-
-                    <label for="customOption">Custom Option:</label>
-                    <input type="text" id="customOption" name="customOption" list="customOptions">
-                    <datalist id="customOptions">
-                        <option value="Option A">
-                        <option value="Option B">
-                        <option value="Option C">
-                    </datalist><br><br>
-
-                    <button type="submit" style="font-size: 16px; padding: 8px 16px;">Submit</button>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <button type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
     </footer>
-
 </body>
 
 </html>
